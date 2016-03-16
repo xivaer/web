@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- 最新編譯和最佳化的 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+    <!-- 選擇性佈景主題 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+   
+    <style>
+        .carousel-indicators {
+          bottom:-5px;
+          left:5%;
+        }
+        .carousel .item  {
+            height:500px;
+        }
+        .carousel-indicators li {
+          border-color:#99ffff;
+          background-color:#008080;
+        }
+        .carousel-indicators .active{
+            background-color: #99ffff;
+        }
+
+        @media (max-width: 979px){
+            .carousel .item  {
+                height:500px;
+            }
+        }
+        @media (max-width: 767px){
+            .carousel .item  {
+                height:300px;
+            }
+        }
+    </style>
+    <!--@media (max-width: 979px)/@media (max-width: 767px)不同尺寸 不同設定-->
+</head>
+<body>
+
+    <header>
+        <div class="jumbotron">
+            <div class="container">
+                <h1>Hola World</h1>
+                <h3>My System</h3>
+            </div>
+        </div>
+    </header>
+
+        <div class="carousel slide" data-ride="carousel" id="carousel-ex">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-ex" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-ex" data-slide-to="1"></li>
+                    <li data-target="#carousel-ex" data-slide-to="2"></li>
+                </ol>
+
+                <div class="carousel-inner">
+                    <div class="item active"> <!--active 優先顯示-->
+                        <img src="images/desktop.png" alt="image">
+
+                        <div class="carousel-caption">
+                            <h2>This is the title</h2>
+                            <p>This is the body</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="images/dropbox.png" alt="image">
+
+                        <div class="carousel-caption">
+                            <h2>This is the title</h2>
+                            <p>This is the body</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="images/temp.png" alt="image">
+
+                        <div class="carousel-caption">
+                            <h2>This is the title</h2>
+                            <p>This is the body</p>
+                        </div>
+                    </div>
+                    <a href="#carousel-ex" class="left carousel-control" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a href="#carousel-ex" class="right carousel-control" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                </div>
+        </div> <!-- end container -->
+
+    <footer>
+        <div class="container">
+            <hr>
+            <p>
+                <small><a href=""></a>Contact me : 0906-609-253</small></p>
+            </p>
+        </div> <!-- end container -->
+    </footer>
+    
+    <!-- jQuery (Bootstrap 所有外掛均需要使用) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- 依需要參考已編譯外掛版本（如下），或各自獨立的外掛版本 -->
+    <script src="dist/js/bootstrap.min.js"></script>
+    <!-- 最新編譯和最佳化的 JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
